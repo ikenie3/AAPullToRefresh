@@ -141,10 +141,10 @@
     [self addSubview:_activityIndicatorView];
     
     //init background layer
-    AAPullToRefreshBackgroundLayer *backgroundLayer = [[AAPullToRefreshBackgroundLayer alloc] initWithBorderWidth:self.borderWidth];
-    backgroundLayer.frame = self.bounds;
-    [self.layer addSublayer:backgroundLayer];
-    self.backgroundLayer = backgroundLayer;
+//    AAPullToRefreshBackgroundLayer *backgroundLayer = [[AAPullToRefreshBackgroundLayer alloc] initWithBorderWidth:self.borderWidth];
+//    backgroundLayer.frame = self.bounds;
+//    [self.layer addSublayer:backgroundLayer];
+//    self.backgroundLayer = backgroundLayer;
     
     if (!self.imageIcon)
         self.imageIcon = [UIImage imageNamed:@"centerIcon"];
@@ -158,20 +158,20 @@
     self.imageLayer = imageLayer;
     
     //init arc draw layer
-    CAShapeLayer *shapeLayer = [[CAShapeLayer alloc] init];
-    shapeLayer.frame = self.bounds;
-    shapeLayer.fillColor = nil;
-    shapeLayer.strokeColor = self.borderColor.CGColor;
-    shapeLayer.strokeEnd = 0.0f;
-    shapeLayer.shadowColor = [UIColor colorWithWhite:1 alpha:0.8f].CGColor;
-    shapeLayer.shadowOpacity = 0.7f;
-    shapeLayer.shadowRadius = 20.0f;
-    shapeLayer.contentsScale = [UIScreen mainScreen].scale;
-    shapeLayer.lineWidth = self.borderWidth;
-    shapeLayer.lineCap = kCALineCapRound;
-    
-    [self.layer addSublayer:shapeLayer];
-    self.shapeLayer = shapeLayer;
+//    CAShapeLayer *shapeLayer = [[CAShapeLayer alloc] init];
+//    shapeLayer.frame = self.bounds;
+//    shapeLayer.fillColor = nil;
+//    shapeLayer.strokeColor = self.borderColor.CGColor;
+//    shapeLayer.strokeEnd = 0.0f;
+//    shapeLayer.shadowColor = [UIColor colorWithWhite:1 alpha:0.8f].CGColor;
+//    shapeLayer.shadowOpacity = 0.7f;
+//    shapeLayer.shadowRadius = 20.0f;
+//    shapeLayer.contentsScale = [UIScreen mainScreen].scale;
+//    shapeLayer.lineWidth = self.borderWidth;
+//    shapeLayer.lineCap = kCALineCapRound;
+//    
+//    [self.layer addSublayer:shapeLayer];
+//    self.shapeLayer = shapeLayer;
 }
 
 #pragma mark - layout
